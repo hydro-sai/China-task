@@ -1,0 +1,111 @@
+##########################################################################
+# CREST Project File Format (Version more than 2.0)
+##########################################################################
+Version		=	2.0
+##########################################################################
+# MODEL AREA 
+##########################################################################
+NCols	     	=	6165	# Number of columns
+NRows		=	3540	# Number of rows
+XLLCorner	=	73.441666667000
+YLLCorner	=	18.166666667000
+CellSize		=	0.01		
+NoData_value	=	-9999
+##########################################################################
+NCols_Local      =       3675
+NRows_Local      =       2810
+XLLCorner_Local  =       73.491659908416
+YLLCorner_Local  =       21.116267910544
+##########################################################################
+# MODEL Run Time Information
+# y(year);m(month);d(day);h(hour);u(minute);s(second)
+##########################################################################
+ForecastMode       =        1h
+TimeMark		=	h	
+TimeStep		=	1
+RunoffMultiplier = 1  # Multiplier for discharge (use < 1.0 to reduce flow)
+StartDate		= 	2026082500
+LoadState 		=	no
+WarmupDate	=	2026082500
+EndDate		= 	2026082715
+SaveState               =	no
+##########################################################################
+# MODEL Run Style
+##########################################################################
+RunStyle = simu	 # simu, cali_SCEUA, RealTime, repe
+##########################################################################
+RoutingType =CLR		# JLR (default), CLR
+##########################################################################
+# MODEL Directory
+# Format: "ASC", "TXT", "DBIF","BIFFIT", 
+#	"TRMMRT", "TRMMV6", "NMQBIN", "ASBIMO", "BIBIMO"
+##########################################################################
+BasicFormat	=	asc 
+BasicPath		=	".\Basics\1km\"
+##########################################################################
+ParamFormat	=	asc
+ParamPath	=	".\Params\1km\"
+##########################################################################
+StateFormat	=	asc
+StatePath		=	".\States01\"
+StateAlterPath	=	".\StatesAlter\"
+##########################################################################
+ICSFormat	=	asc
+ICSPath		=	".\ICS\"
+##########################################################################
+RainFormat	=	000
+RainPath		=	".\Rains\000\"
+##########################################################################
+PETFormat	=	asc
+PETPath		=	".\PETs\pet"
+##########################################################################
+ResultFormat	=	asc
+ResultPath	=	".\Results01\"
+##########################################################################
+CalibFormat	=	asc
+CalibPath		=	".\Calibs\"
+##########################################################################
+OBSFormat	=	asc
+OBSPath		=	".\OBS\"
+##########################################################################
+# The below data are omitted, when RunStyle=cali_SCEUA
+##########################################################################
+#OutPix Information
+##########################################################################
+NOutPixs		=	0
+OutPixColRow 	=	no
+OutPixName1 	=	changjiang
+OutPixLong1	=	116.5082
+OutPixLati1	=	29.9845
+OutPixName2	=	XianHeKou_3
+OutPixLong2	=	109.3121
+OutPixLati2	=	33.3611
+##########################################################################
+#Outlet Information
+##########################################################################
+HasOutlet		=	no
+OutletColRow	=	no
+OutletName	=	YangXian_2
+OutletLong	=	107.537474
+OutletLati		=	33.212206
+##########################################################################
+#Grid Outputs
+##########################################################################
+GOVar_Rain	=	no
+GOVar_PET	=	no
+GOVar_EPot	=	no
+GOVar_EAct	=	no
+GOVar_W		=	no
+GOVar_SM	=	no
+GOVar_R		=	yes
+GOVar_ExcS	=	no
+GOVar_ExcI	=	no
+GOVar_RS	=	no
+GOVar_RI		=	no
+GOVar_FS	=	no
+GOVar_Land_Risk	=	no
+##########################################################################
+NumOfOutputDates		=	0 !3
+OutputDate_1		=	2010071700
+OutputDate_2		=	2010071720
+##########################################################################
